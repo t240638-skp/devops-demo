@@ -7,6 +7,6 @@ def home():
     return "Hello from DevOps Pipeline - v2"
 @app.route("/health")
 def health():
-    return {"status": "ok"}
+    return {"status": "down"}
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
